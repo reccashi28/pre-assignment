@@ -10,23 +10,37 @@ body {
 header {
     position: relative;
     height: 100vh;
-    border: 1px solid green;
+    background: url('../images/office_table_2.jpg'), #E5E5E5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
 }
 
 .nav-container {
     position: absolute;
     height: 115px;
-    /* border: 2px solid green; */
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.45);
+    top: 0;
+    left: 0;
 }
 
 .nav-list {
     display: flex;
-    /* border: 2px solid yellow; */
     width: 100%;
 }
 
@@ -39,8 +53,81 @@ header {
     cursor: pointer;
     color: white;
 }
+.nav-list li:hover {
+    color: #E5E5E5;
+}
 
 .logo {
     margin-right: auto;
     align-self: flex-start;
+}
+
+/* ------ header content ----- */
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    color: white;
+    z-index: 6;
+    position: absolute;
+}
+
+.header-content-title {
+    font-weight: 900;
+    padding: 30px;
+    font-size: 80px;
+    line-height: 90px;
+    text-align: center;
+}
+
+.header-content p {
+    /* padding: 30px; */
+    text-align: center;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 450px;
+    padding: 30px;
+}
+
+.header-buttons button {
+    padding: 20px 45px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 5px solid #FFFFFF;
+    color: white;
+}
+
+.header-buttons button:hover {
+    color: black;
+    background: #FFFFFF;
+    border: 5px solid #FFFFFF;
+}
+
+/* ------ end of header content ----- */
+
+main {
+    width: 100%;
+    height: auto;
+   
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
 }
