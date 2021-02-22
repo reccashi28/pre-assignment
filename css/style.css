@@ -4,12 +4,20 @@
     margin: 0;
 }
 
+
+
 body {
     font-family: Montserrat, sans-serif;
     position: relative;
 }
+
+.container {
+    max-width: 1600px;
+}
+.nav-container-mobile {
+    display: none;
+}
 header {
-    position: relative;
     height: 100vh;
     background: url('../images/office_table_2.jpg'), #E5E5E5;
     background-position: center;
@@ -20,6 +28,7 @@ header {
     justify-content: center;
     align-items: center;
     z-index: 2;
+    position: relative;
 }
 .overlay {
     position: absolute;
@@ -87,6 +96,7 @@ header {
 .header-content p {
     text-align: center;
     line-height: 30px;
+    font-size: 25px;
 }
 
 .header-buttons {
@@ -144,15 +154,17 @@ main {
     font-size: 60px;
 }
 .services-options {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
     display: flex;
     padding: 30px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .service:not(:last-child){
     margin-right: 133px;
+    
 }
 
 .service {
@@ -165,6 +177,7 @@ main {
     height: 505px;
     width: 347px;
     position: relative;
+    margin-top: 70px;
 }
 
 .service h4 {
