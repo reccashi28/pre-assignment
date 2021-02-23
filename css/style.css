@@ -170,6 +170,7 @@ main {
     height: 505px;
     width: 347px;
     position: relative;
+    margin-top: 20px;
 }
 
 .service h4 {
