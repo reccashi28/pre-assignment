@@ -24,7 +24,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* z-index: 2; */
     position: relative;
     width: 100%;
 }
@@ -138,7 +137,7 @@ main {
 
 .main-content-title {
     width: 100%;
-    height: 300px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,12 +148,14 @@ main {
 }
 .services-options {
     padding: 0 30px;
+    height: auto;
     width: 100%;
     /* border: 1px solid green; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 130px;
+    row-gap: 70px;
     align-items: center;
 }
 
@@ -169,7 +170,6 @@ main {
     height: 505px;
     width: 347px;
     position: relative;
-    margin-top: 70px;
 }
 
 .service h4 {
