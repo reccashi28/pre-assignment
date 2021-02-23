@@ -86,7 +86,9 @@
 }
 
 @media screen and (max-width: 414px) {
-
+    header {
+        background-position: right 10px top 100px ;
+    }
     .header-content {
         width: 100%;
         padding: 5rem 30px 0 30px;
