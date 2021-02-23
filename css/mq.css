@@ -68,8 +68,6 @@
     }
 
     .fa-ellipsis-h {
-        /* width: 100px; */
-        /* border:  1px solid green; */
         font-size: 50px;
         position: absolute;
         right: 2rem;
@@ -78,12 +76,13 @@
     }
     footer {
         flex-direction: column;
-        justify-content: space-around;
-        padding: 30px;
+        justify-content: space-evenly;
+        height: 195px;
     }
-    .footer-list li {
-        padding: 0 30px 10px 0;
+    .footer-list {
+    width: 225px;
     }
+    
 }
 
 @media screen and (max-width: 414px) {
