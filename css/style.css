@@ -2,18 +2,15 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 
 
 body {
     font-family: Montserrat, sans-serif;
-    position: relative;
 }
 
-.container {
-    max-width: 1600px;
-}
 .nav-container-mobile {
     display: none;
 }
@@ -27,8 +24,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    /* z-index: 2; */
     position: relative;
+    width: 100%;
 }
 .overlay {
     position: absolute;
@@ -63,13 +61,9 @@ header {
     cursor: pointer;
     color: white;
 }
-.nav-list li:hover {
-    color: #E5E5E5;
-}
 
 .logo {
     margin-right: auto;
-    align-self: flex-start;
 }
 
 /* ------ header content ----- */
@@ -124,7 +118,7 @@ header {
     border: 5px solid #FFFFFF;
 }
 
-/* ------ end of header content ----- */
+/* ------ main content ----- */
 
 main {
     width: 100%;
@@ -154,18 +148,16 @@ main {
     font-size: 60px;
 }
 .services-options {
-    display: flex;
-    padding: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    padding: 0 30px;
     width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 130px;
+    align-items: center;
 }
 
-.service:not(:last-child){
-    margin-right: 133px;
-    
-}
 
 .service {
     border: 3px solid #000000;
@@ -208,6 +200,9 @@ main {
     color: white;
 }
 
+
+/* ----- footer ---------  */
+
 footer {
     width: 100%;
     height: 135px;
@@ -217,6 +212,7 @@ footer {
     padding: 0 30px;
     color: white;
     justify-content: space-between;
+    font-size: 25px;
 }
 
 .footer-list {
