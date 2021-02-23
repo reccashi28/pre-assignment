@@ -102,6 +102,9 @@
         font-size: 20px;
     }
 
+    .main-content-title {
+        height: 300px;
+    }
     .main-content-title h1 {
         font-size: 35px;
     }
